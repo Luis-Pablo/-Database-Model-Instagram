@@ -43,3 +43,4 @@ The project is using the SQLAlchemy Python library to generate the database.
 - Refresh the `diagram.png` file at the end by running `$ python3 src/models.py` on the console.
 
 
+# -Database-Model-Instagram
