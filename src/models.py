@@ -49,21 +49,7 @@ class Media(Base):
     post = relationship(Post)
 
 
-class  Like(Base):
-    __tablename__="like"
-    id = Column(Integer, primary_key=True)
-    user_from_id = Column(Integer, ForeignKey("user.id"))
-    user_to_id = Column(Integer, ForeignKey("user.id"))
-    post_id = Column(Integer, ForeignKey("post.id"))
-    comment = Column(Integer, ForeignKey("comment.id"))
-    user = relationship(User)
 
-class Chat(Base):
-    __tablename__="chat"
-    id = Column(Integer, primary_key=True)
-    user_from_id = Column(Integer, ForeignKey("user.id"))
-    user_to_id = Column(Integer, ForeignKey("user.id"))
-    user = relationship(User)
 
     def to_dict(self):
         return {}
